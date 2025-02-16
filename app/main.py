@@ -32,7 +32,7 @@ def create_streamlit_app(llm, llm_personal, portfolio, clean_text):
             experience = st.text_input("📅 Professional Experience:", value="Associate Software Engineer in 2 years")
             skillsIHave = st.text_area("🛠 Skills:", value="Node.js, React, Python, Java, AI, Machine Learning")
             projects = st.text_area("🗂 Projects:", value="Shopify App, Shopify Theme, Seirios, Vento Life Style")
-            submit_personal_data = st.form_submit_button("📩 Submit & Generate Email")
+            submit_personal_data = st.form_submit_button("📩 Generate Email")
     else:
         with st.form(key="company_data_form"):
             uploaded_file = st.file_uploader("Upload Portfolio File", type=["csv"])
